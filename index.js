@@ -14,7 +14,7 @@ const pagination = document.querySelector('[data-js="pagination"]');
 // States
 const maxPage = 42;
 let page = 1;
-let searchQuery = "";
+const searchQuery = "";
 
 searchBarContainer.addEventListener("submit", (event) => {
   event.preventDefault();

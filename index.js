@@ -46,10 +46,10 @@ prevButton.addEventListener("click", () => {
   fetchCharacters(page);
 });
 
-async function fetchCharacters(value, search) {
+async function fetchCharacters(value) {
   try {
     const response = await fetch(
-      `https://rickandmortyapi.com/api/character/?page=${value}&name=${search}`
+      `https://rickandmortyapi.com/api/character/?page=${value}&name=${searchQuery}`
     );
     const data = await response.json();
     const characterData = data.results;

@@ -36,7 +36,7 @@ nextButton.addEventListener("click", async () => {
   }
   pagination.textContent = `${page} / ${maxPage}`;
   cardContainer.innerHTML = "";
-  fetchCharacters(page, searchQuery);
+  await fetchCharacters(page, searchQuery);
 });
 
 prevButton.addEventListener("click", async () => {
